@@ -1853,10 +1853,11 @@ Aliases:
 Applicable: Exchange Online
 Required: False
 Position: Named
-Default value: None
+Default value: $true for all GCC tenants, $false otherwise
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
+Note: If you are a GCC customer, by turning off OutlookMobileGCCRestrictionsEnabled, you are agreeing to Outlook Mobile connecting to features which are not part of Microsoft’s GCC Offering and are not GCC Compliant.  
 
 ### -OutlookMobileHelpShiftEnabled
 This parameter is available only in the cloud-based service.
