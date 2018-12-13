@@ -1846,15 +1846,7 @@ The OutlookMobileGCCRestrictionsEnabled parameter specifies whether to enable or
 
 - $false: Enable features that aren't compliant with Office 355 US Government plans. This is the default value for all other type of tenants.
 
-The within Outlook for iOS and Android that aren't compliant with the Office 365 US Government plans include:
-
-- Multi-account support
-
-- Third-party services
-
-- HelpShift and in-app support
-
-- Any Microsoft services that are outside the Office 365 US Government compliance boundary (for example, Bing and Cortana).
+Outlook for iOS and Android features that are not compliant with the Office 365 US Government compliance boundary are [listed here](https://docs.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-in-the-government-cloud#services-and-features-not-available).
 
 ```yaml
 Type: $true | $false
@@ -1863,24 +1855,7 @@ Aliases:
 Applicable: Exchange Online
 Required: False
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -OutlookMobileHelpShiftEnabled
-This parameter is available only in the cloud-based service.
-
-{{Fill OutlookMobileHelpShiftEnabled Description}}
-
-```yaml
-Type: $true | $false
-Parameter Sets: Default
-Aliases:
-Applicable: Exchange Online
-Required: False
-Position: Named
-Default value: None
+Default value: $true for all GCC tenants, $false otherwise
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
